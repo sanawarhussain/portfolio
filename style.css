@@ -2527,4 +2527,18 @@ body.light-mode .footer-social span {
 
 }
 
+/* LIGHT MODE - HEADER & HERO NAME */
 
+/* LIGHT MODE */
+
+body.light-mode .navbar-brand {
+    color: #111111 !important ;
+}
+
+body.light-mode .hero-content h1 {
+    color: #111111;
+}
+
+body.light-mode .hero-content h1 span {
+    color: #6c63ff;
+}
