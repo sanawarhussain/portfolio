@@ -8,13 +8,11 @@
 
     <meta name="description" content="Sanawar Hussain - Software Engineer and Frontend Developer Portfolio">
 
-    
+
 
     <title>Sanawar Hussain | Software Engineer</title>
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,7 +20,7 @@
     <!-- Your CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
-    <link rel="stylesheet" href="script.js">
+
 
 </head>
 
@@ -41,7 +39,8 @@
                     SANAWAR<span>.</span>
                 </a>
 
-                <!-- Mobile Menu Button -->
+            
+            <!-- Mobile Menu Button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
                     aria-controls="mobileMenu">
 
@@ -87,7 +86,7 @@
                             <a class="nav-link" href="#education">Education</a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item light-dark-mode">
                             <button id="themeToggle" class="theme-btn" type="button">
                                 ☀
                             </button>
@@ -103,6 +102,8 @@
 
             </div>
         </nav>
+
+
 
 
         <!-- Mobile Offcanvas -->
@@ -154,17 +155,27 @@
                         </a>
                     </li>
 
+                     <li class="nav-item">
+                        <a class="nav-link" href="#education" data-bs-dismiss="offcanvas">
+                            Education
+                        </a>
+                    </li>
+
+                      <li class="nav-item light-dark-mode">
+                            <button id="themeToggle" class="theme-btn" type="button">
+                                ☀
+                            </button>
+                        </li>
+
+
                     <li class="nav-item">
                         <a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">
                             Contact
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education" data-bs-dismiss="offcanvas">
-                            Education
-                        </a>
-                    </li>
+                   
+                    
 
                 </ul>
 
@@ -277,14 +288,18 @@
 
                                 <div class="image-ring"></div>
 
-                                <img src="images/my pic .jpg" alt="Sanawar Hussain" class="profile-image">
+                                <img src="images/mypicai.png" alt="Sanawar Hussain" class="profile-image">
 
                             </div>
 
-                            <div class="floating-card">
-                                Frontend Developer
-                            </div>
+                            <div class="hero-status">
+                                <span class="status-dot"></span>
 
+                                <div>
+                                    <small>CURRENTLY BUILDING</small>
+                                    <strong>Modern Web Experiences</strong>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -416,7 +431,7 @@
 
             <div class="container">
 
-                <div class="section-heading text-center">
+                <div class="section-heading">
 
                     <span>02 / MY SKILLS</span>
 
@@ -548,165 +563,253 @@
 
                 <!-- Section Heading -->
                 <div class="section-heading">
+
                     <span>03 / SELECTED WORK</span>
 
                     <h2>
                         Projects I've
                         <span>built.</span>
                     </h2>
-                </div>
-
-
-                <!-- Featured Project -->
-                <div class="featured-project reveal-scale">
-
-                    <!-- Project Image -->
-                    <div class="project-image">
-
-                        <img src="images/netflix-project.jpg" alt="Netflix Clone Project">
-
-                        <div class="project-overlay">
-                            <span>VIEW PROJECT ↗</span>
-                        </div>
-
-                    </div>
-
-
-                    <!-- Project Information -->
-                    <div class="project-info">
-
-                        <div class="project-number">
-                            01
-                        </div>
-
-                        <span class="project-type">
-                            FRONTEND DEVELOPMENT
-                        </span>
-
-                        <h3>
-                            Netflix Landing Page
-                            & Investor Relations Clone
-                        </h3>
-
-                        <p>
-                            A responsive recreation of Netflix's landing page
-                            and Investor Relations website, focusing on accurate
-                            layouts, responsive design and modern frontend
-                            development techniques.
-                        </p>
-
-
-                        <!-- Technologies -->
-                        <div class="project-tech">
-
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>Bootstrap</span>
-                            <span>JavaScript</span>
-
-                        </div>
-
-
-                        <!-- Buttons -->
-                        <div class="project-buttons">
-
-                            <a href="https://sanawarhussain.github.io/project-one/" target="_blank"
-                                class="project-link">
-                                GitHub ↗
-                            </a>
-
-                            <a href="#contact" class="project-link secondary">
-                                Discuss Project
-                            </a>
-
-                        </div>
-
-                    </div>
 
                 </div>
 
 
-                <!-- More Projects -->
+                <!-- Projects Grid -->
+                <div class="projects-grid">
 
-                <div class="row g-4 mt-4">
 
-                    <!-- Project 02 -->
-                    <div class="col-md-6">
+                    <!-- ================= PROJECT 01 ================= -->
 
-                        <div class="project-card reveal">
+                    <article class="modern-project-card">
 
-                            <div class="project-card-image">
+                        <!-- Project Image -->
+                        <div class="modern-project-image">
 
-                                <div class="project-placeholder">
-                                    PROJECT 02
+                            <a href="https://sanawarhussain.github.io/project-one/" target="_blank">
+
+                                <img src="images/netflix-project.jpg"
+                                    alt="Netflix Landing Page and Investor Relations Clone">
+
+                                <div class="project-image-overlay">
+                                    <span>VIEW PROJECT ↗</span>
                                 </div>
+
+                            </a>
+
+                            <span class="project-index">
+                                01
+                            </span>
+
+                        </div>
+
+
+                        <!-- Project Content -->
+                        <div class="modern-project-content">
+
+                            <div class="project-meta">
+                                <span>FRONTEND DEVELOPMENT</span>
+                            </div>
+
+                            <h3>
+                                Netflix Landing Page
+                                & Investor Relations Clone
+                            </h3>
+
+                            <p>
+                                A responsive recreation of Netflix's landing
+                                page and Investor Relations website.
+                            </p>
+
+
+                            <!-- Technologies -->
+                            <div class="modern-project-tech">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
 
                             </div>
 
-                            <div class="project-card-content">
 
-                                <span>WEB DEVELOPMENT</span>
+                            <!-- Buttons -->
+                            <div class="modern-project-links">
 
-                                <h3>
-                                    E-Commerce Website
-                                </h3>
+                                <a href="https://sanawarhussain.github.io/project-one/" target="_blank">
 
-                                <p>
-                                    A modern online shopping experience
-                                    focused on responsive design and usability.
-                                </p>
+                                    Live ↗
 
-                                <div class="project-tech">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>Bootstrap</span>
-                                </div>
+                                </a>
+
+                                <a href="https://github.com/sanawarhussain/project-one" target="_blank"
+                                    class="project-github">
+
+                                    GitHub ↗
+
+                                </a>
+
 
                             </div>
 
                         </div>
 
-                    </div>
+                    </article>
 
 
-                    <!-- Project 03 -->
-                    <div class="col-md-6">
 
-                        <div class="project-card reveal">
+                    <!-- ================= PROJECT 02 ================= -->
 
-                            <div class="project-card-image">
+                    <article class="modern-project-card">
 
-                                <div class="project-placeholder">
-                                    PROJECT 03
+                        <!-- Project Image -->
+                        <div class="modern-project-image">
+
+                            <a href="https://sanawar-portfolio-ivory.vercel.app/" target="_blank">
+
+                                <img src="images/project 2 .jpg" alt="AI Powered Portfolio Website">
+
+                                <div class="project-image-overlay">
+                                    <span>VIEW PROJECT ↗</span>
                                 </div>
+
+                            </a>
+
+                            <span class="project-index">
+                                02
+                            </span>
+
+                        </div>
+
+
+                        <!-- Project Content -->
+                        <div class="modern-project-content">
+
+                            <div class="project-meta">
+                                <span>AI POWERED WEB DEVELOPMENT</span>
+                            </div>
+
+                            <h3>
+                                AI-Powered Portfolio
+                            </h3>
+
+                            <p>
+                                A modern personal portfolio website combining
+                                AI-powered features with responsive web design.
+                            </p>
+
+
+                            <!-- Technologies -->
+                            <div class="modern-project-tech">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+                                <span>AI</span>
 
                             </div>
 
-                            <div class="project-card-content">
 
-                                <span>UI DEVELOPMENT</span>
+                            <!-- Buttons -->
+                            <div class="modern-project-links">
 
-                                <h3>
-                                    Responsive Web Interface
-                                </h3>
+                                <a href="https://sanawar-portfolio-ivory.vercel.app/" target="_blank">
 
-                                <p>
-                                    A responsive interface designed with
-                                    modern layouts and mobile-first principles.
-                                </p>
+                                    Live ↗
 
-                                <div class="project-tech">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>Bootstrap</span>
-                                    <span>JavaScript</span>
-                                </div>
+                                </a>
+
+                                <a href="https://github.com/sanawarhussain/portfolio" target="_blank"
+                                    class="project-github">
+
+                                    GitHub ↗
+
+                                </a>
 
                             </div>
 
                         </div>
 
-                    </div>
+                    </article>
+
+
+
+                    <!-- ================= PROJECT 03 ================= -->
+
+                    <article class="modern-project-card">
+
+                        <!-- Project Image -->
+                        <div class="modern-project-image">
+
+                            <a href="https://github.com/sanawarhussain/wscube_full_stack_website_clone" target="_blank">
+
+                                <img src="images/project 03 .jpg" alt="WsCube Tech Full Stack Website Clone">
+
+                                <div class="project-image-overlay">
+                                    <span>VIEW PROJECT ↗</span>
+                                </div>
+
+                            </a>
+
+                            <span class="project-index">
+                                03
+                            </span>
+
+                        </div>
+
+
+                        <!-- Project Content -->
+                        <div class="modern-project-content">
+
+                            <div class="project-meta">
+                                <span>FRONTEND DEVELOPMENT</span>
+                            </div>
+
+                            <h3>
+                                WsCube Tech Website Clone
+                            </h3>
+
+                            <p>
+                                A responsive clone of the WsCube Tech website
+                                built with modern frontend development techniques.
+                            </p>
+
+
+                            <!-- Technologies -->
+                            <div class="modern-project-tech">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+
+                            <!-- Buttons -->
+
+                            <div class="modern-project-links">
+
+                                <a href="https://sanawarhussain.github.io/wscube_full_stack_website_clone-/"
+                                    target="_blank">
+
+                                    Live ↗
+
+                                </a>
+
+                                <a href="https://github.com/sanawarhussain/wscube_full_stack_website_clone"
+                                    target="_blank" class="project-github">
+
+                                    GitHub ↗
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
 
                 </div>
 
@@ -1441,17 +1544,13 @@
 
 
     <!-- whats app icon  -->
-<a
-    href="https://wa.me/923122259783"
-    class="whatsapp-button"
-    target="_blank"
-    aria-label="Chat with me on WhatsApp">
 
-    <span class="whatsapp-tooltip">Let's Chat</span>
+    <a href="https://wa.me/923122259783" class="whatsapp-button" target="_blank" aria-label="Chat with me on WhatsApp">
 
-    <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-whatsapp"></i>
 
-</a>
+    </a>
+
 
 
 
