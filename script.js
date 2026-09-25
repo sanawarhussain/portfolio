@@ -186,14 +186,21 @@ window.addEventListener("scroll", function () {
 
 
 
-  const themeBtn = document.getElementById("themeToggle");
+const themeBtn = document.getElementById("themeToggle");
 
-themeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
+if (themeBtn) {
 
-    themeBtn.textContent =
-        document.body.classList.contains("light-mode")
-            ? "🌙"
-            : "☀";
-});
+    themeBtn.addEventListener("click", function () {
+
+        document.body.classList.toggle("light-mode");
+
+        if (document.body.classList.contains("light-mode")) {
+            themeBtn.textContent = "🌙";
+        } else {
+            themeBtn.textContent = "☀";
+        }
+
+    });
+
+}
 
