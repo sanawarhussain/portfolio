@@ -1,0 +1,402 @@
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 991px) {
+
+    .hero-content {
+        text-align: center;
+        padding-top: 130px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .hero-image {
+        height: 350px;
+    }
+
+    .image-circle {
+        width: 260px;
+        height: 260px;
+    }
+
+    .image-circle span {
+        font-size: 60px;
+    }
+
+    .floating-card {
+        bottom: 20px;
+        right: 10%;
+    }
+
+
+    .image-circle {
+        width: 270px;
+        height: 270px;
+    }
+
+    .hero-image {
+        height: 350px;
+    }
+
+
+
+
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured-project {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        min-height: 400px;
+    }
+
+    .project-info {
+        padding: 40px;
+    }
+
+    .project-info h3 {
+        font-size: 32px;
+    }
+
+
+    .experience-timeline {
+        padding-left: 30px;
+    }
+
+    .experience-timeline::before {
+        left: 5px;
+    }
+
+    .experience-item {
+        display: block;
+
+        padding-left: 35px;
+
+        padding-bottom: 50px;
+    }
+
+    .experience-dot {
+        left: 0;
+    }
+
+    .experience-date {
+        text-align: left;
+
+        margin-bottom: 15px;
+    }
+
+
+    /* Education timeline - stack like experience timeline */
+
+    .education-item {
+        display: block;
+        position: relative;
+
+        min-height: 0;
+        padding-left: 35px;
+        margin-bottom: 35px;
+    }
+
+    .education-year {
+        text-align: left;
+        padding-top: 0;
+        margin-bottom: 12px;
+    }
+
+    .education-line {
+        position: absolute;
+        left: 0;
+        top: 4px;
+        bottom: -35px;
+
+        justify-content: flex-start;
+    }
+
+    .education-line::after {
+        left: 5px;
+        top: 15px;
+    }
+
+    .education-dot {
+        margin-top: 0;
+    }
+
+    .education-card {
+        margin-bottom: 0;
+    }
+
+
+    /* Footer - stack columns */
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 45px;
+
+        text-align: left;
+    }
+
+
+
+    .contact-section {
+        padding: 100px 0;
+    }
+
+    .contact-form {
+        padding: 35px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   SMALL MOBILE (576px and down)
+========================= */
+
+@media (max-width: 576px) {
+
+    /* Section spacing */
+
+    .about-section,
+    .skills-section,
+    .projects-section,
+    .experience-section,
+    .education-section {
+        padding: 90px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 45px;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(32px, 9vw, 44px);
+    }
+
+
+    /* Hero */
+
+    .hero-content h1 {
+        font-size: clamp(42px, 13vw, 60px);
+    }
+
+    .hero-content h2 {
+        font-size: 22px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .btn-primary-custom,
+    .btn-outline-custom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .hero-image {
+        height: 300px;
+    }
+
+    .image-circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .image-circle span {
+        font-size: 48px;
+    }
+
+    .hero-status {
+        padding: 10px 14px;
+        gap: 10px;
+        max-width: 90%;
+    }
+
+    .hero-status strong {
+        font-size: 12px;
+    }
+
+
+    /* About */
+
+    .about-large-text {
+        font-size: 20px !important;
+    }
+
+    .about-card {
+        padding: 20px;
+        gap: 18px;
+    }
+
+
+    /* Skills - single column on small phones */
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        min-height: 160px;
+        padding: 25px;
+    }
+
+
+    /* Experience */
+
+    .experience-timeline {
+        padding-left: 20px;
+    }
+
+    .experience-timeline::before {
+        left: 0;
+    }
+
+    .experience-item {
+        padding-left: 25px;
+    }
+
+    .experience-dot {
+        left: -5px;
+    }
+
+    .experience-content {
+        padding: 25px 20px;
+    }
+
+    .experience-content h3 {
+        font-size: 22px;
+    }
+
+    .experience-number {
+        font-size: 25px;
+    }
+
+
+    /* Education */
+
+    .education-card {
+        padding: 22px 20px;
+    }
+
+    .education-card h3 {
+        font-size: 22px;
+    }
+
+    .education-number {
+        font-size: 24px;
+    }
+
+
+    /* Contact */
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .contact-item {
+        padding: 16px;
+        gap: 15px;
+    }
+
+    .contact-item h3 {
+        font-size: 13px;
+    }
+
+    .contact-socials > div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    /* Footer */
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+
+    /* WhatsApp button */
+
+    .whatsapp-button {
+        width: 52px;
+        height: 52px;
+
+        right: 18px;
+        bottom: 18px;
+
+        font-size: 26px;
+    }
+
+}
+
+
+/* =========================
+   EXTRA SMALL MOBILE (375px and down)
+========================= */
+
+@media (max-width: 375px) {
+
+    .hero-content h1 {
+        font-size: clamp(36px, 13vw, 48px);
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .image-circle {
+        width: 190px;
+        height: 190px;
+    }
+
+    .image-circle span {
+        font-size: 40px;
+    }
+
+    .contact-form {
+        padding: 20px 15px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+}

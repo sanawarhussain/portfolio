@@ -1,3 +1,18 @@
+// Close mobile offcanvas when a navigation link is clicked
+const mobileMenu = document.getElementById("mobileMenu");
+
+const mobileNavLinks = mobileMenu.querySelectorAll(".nav-link");
+
+mobileNavLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        const offcanvas = bootstrap.Offcanvas.getInstance(mobileMenu);
+
+        if (offcanvas) {
+            offcanvas.hide();
+        }
+    });
+});
+
 /* =================================
    HERO PARTICLES
 ================================= */
@@ -195,9 +210,9 @@ if (themeBtn) {
         document.body.classList.toggle("light-mode");
 
         if (document.body.classList.contains("light-mode")) {
-            themeBtn.textContent = "🌙";
-        } else {
             themeBtn.textContent = "☀";
+        } else {
+            themeBtn.textContent = "🌙";
         }
 
     });

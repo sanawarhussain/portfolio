@@ -94,23 +94,20 @@ body {
 ========================= */
 
 .hero-section {
-  .hero-section {
     min-height: 100vh;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
     isolation: isolate;
-  }
-
-  background: radial-gradient(
-    circle at 80% 50%,
-    rgba(108, 99, 255, 0.15),
-    transparent 35%
-  );
+    background: radial-gradient(
+        circle at 80% 50%,
+        rgba(108, 99, 255, 0.15),
+        transparent 35%
+    );
 }
 
 .hero-section .container {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content {
@@ -161,6 +158,7 @@ body {
   display: flex;
   gap: 15px;
   margin-top: 30px;
+  flex-direction: row;
 }
 
 .btn-primary-custom,
